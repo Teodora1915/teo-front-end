@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <script src="js/scripts.js"></script>
+    </head>
+    <body>
+        <div id="logged_user">
+                <p>Logged in as Iuliu | <a href="../index.php">Log Out</a></p>
+            </div>        <div id="interface">
+            <div id="dashboard">
+                                <div id="description">
+                    <div id="des_content"><p>Titlu Leut</p></div>
+                    <div id="des_content"><p>Scor</p></div>
+                    <div id="des_content"><p>Membri</p></div>
+                </div>
+                <div id="participant">
+                    <div id="part_cont">FOSSIL LION</div>
+                    <div id="part_cont">1250+</div>
+                    <div id="part_cont">
+                    Vladut Antal George Fuior Constantin Obreja Ana-maria Puscasu Timotei Pislaru                     </div>
+                </div>
+                <div id="participant">
+                    <div id="part_cont">MAMA LION</div>
+                    <div id="part_cont">851 - 1250</div>
+                    <div id="part_cont">
+                                        </div>
+                </div>
+                <div id="participant">
+                    <div id="part_cont">PAPA LION</div>
+                    <div id="part_cont">851 - 1250</div>
+                    <div id="part_cont">
+                                        </div>
+                </div>
+                <div id="participant">
+                    <div id="part_cont">YOUNG LION</div>
+                    <div id="part_cont">551 - 850</div>
+                    <div id="part_cont">
+                    Rares Craciun                     </div>
+                </div>
+                <div id="participant">
+                    <div id="part_cont">TEEN LION</div>
+                    <div id="part_cont">251 - 550</div>
+                    <div id="part_cont">
+                    Smaranda Cozminca                     </div>
+                </div>
+                <div id="participant">
+                    <div id="part_cont">BABY LION</div>
+                    <div id="part_cont">0 - 250</div>
+                    <div id="part_cont">
+                    Andreea-giorgiana Cront Razvan Nechita Ciprian Abatacesei Catalin-constantin Ursachi                     </div>
+                </div>
+            </div>
+            <div id="rules">
+                <div id=rules_row>
+                    <div id="rules_column">
+                        <p>Categorie</p>
+                    </div>
+                    <div id="rules_column">
+                        <p>Denumire task</p>
+                    </div>
+                    <div id="rules_column">
+                        <p>Puncte per task</p>
+                    </div>
+                </div>
+                <div id="rules_row">
+                    <div id="rules_column">
+                        <p>Departament</p>
+                    </div>
+                    <div id="rules_column">
+                        <p>Secretar Departament</p><p>Realizare Mentorat FR</p><p>Research</p><p>Curatare HubSpot</p><p>Contact</p><p>Raspuns Pozitiv</p><p>Coordonator</p><p>Participare Sesiune FR</p>                    </div>
+                    <div id="rules_column">
+                        <p>250</p><p>100</p><p>25</p><p>100</p><p>10</p><p>5</p><p>500</p><p>10</p>                    </div>
+                </div>
+                <div id="rules_row">
+                    <div id="rules_column">
+                        <p>Echipe de FR</p>
+                    </div>
+                    <div id="rules_column">
+                        <p>Responsabil FR</p><p>Sunat 10 cpy</p><p>Intalnire</p><p>Completare HubSpot</p><p>RP Cpy Tehnica</p><p>RP Cpy Barter/Ed</p><p>Mass Email-ing</p><p>Sunat Sediu</p>                    </div>
+                    <div id="rules_column">
+                        <p>200</p><p>25</p><p>25</p><p>50</p><p>75</p><p>50</p><p>150</p><p>10</p>                    </div>
+                </div>
+                <div id="rules_row">
+                    <div id="rules_column">
+                        <p>Extern</p>
+                    </div>
+                    <div id="rules_column">
+                        <p>Participare Training</p><p>Aducere carti de vizita</p>                    </div>
+                    <div id="rules_column">
+                        <p>50</p><p>25</p>                    </div>
+                </div>
+                <div id="rules_row">
+                    <div id="rules_column">
+                        <p>Granturi</p>
+                    </div>
+                    <div id="rules_column">
+                        <p>Research de granturi</p><p>Scriere/Pregatire granturi</p><p>Feedback granturi</p><p>Coordonator WG</p><p>Membru activ in echipa de WG</p><p>Task extra pe Granturi</p><p>Realizare mentorat Granturi</p>                    </div>
+                    <div id="rules_column">
+                        <p>20</p><p>125</p><p>10</p><p>350</p><p>50</p><p>100</p><p>150</p>                    </div>
+                </div>
+                <div id="rules_row">
+                    <div id="rules_column">
+                        <p>International</p>
+                    </div>
+                    <div id="rules_column">
+                        <p>Abonare lista CRD observer</p><p>Abonare lista GD observer</p><p>Task CRD/GD</p><p>FR EBEC/GM</p><p>Coordonator CRD/GD</p><p>Participare OM-uri CRD/GD</p><p>Participare beRICHER</p><p>CRD/GD delegate la RM</p>                    </div>
+                    <div id="rules_column">
+                        <p>10</p><p>10</p><p>50</p><p>100</p><p>500</p><p>20</p><p>500</p><p>250</p>                    </div>
+                </div>
+            </div>
+        </div>
+        <p>Adaugare scor:</p>
+        <form method="post" action="updateScore.php">
+            <select name="members" onchange="showTables(this.value)">
+                        <option value="0">Selectare persoana</option><option value="1">Vladut Antal</option><option value="2">George Fuior</option><option value="3">Constantin Obreja</option><option value="4">Ana-maria Puscasu</option><option value="5">Timotei Pislaru</option><option value="6">Andreea-giorgiana Cront</option><option value="7">Smaranda Cozminca</option><option value="8">Razvan Nechita</option><option value="9">Rares Craciun</option><option value="10">Ciprian Abatacesei</option><option value="11">Catalin-constantin Ursachi</option></select>            <div id="tablesHint"></div>
+            <div id="tasksHint"></div>
+            <div id="buttonHint"></div>
+        </form>
+        <form method="post" action="resetScore.php">
+                    <input type="submit" value="Reset Score">
+                </form><form method="post" action="requestsHistory.html">
+                    <input type="submit" value="Istoric Request-uri">
+                </form>
+                <form method="post" action="scoresHistory.html">
+                    <input type="submit" value="Istoric Scoruri">
+                </form>    </body>
+</html>
