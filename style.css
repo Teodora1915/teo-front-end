@@ -15,12 +15,13 @@
 #rules{
     width: 35%;
     margin-left: 3%;
-    background-color: orange;
+    background-color: green;
     border-style: solid;
     border-width: 1px;
     border-color: black;
     overflow: auto;
     height: 650px;
+    opacity: 0.80;
 }
 
 #rules_row{
@@ -38,6 +39,7 @@
     align-content: center;
     width: 100%;
     margin: auto;
+    color: white;
 }
 
 #rules_content{
@@ -55,15 +57,17 @@
 
 #des_content{
     padding: 2%;
-    background-color: yellow;
+    background-color: darkgreen;
     width: 100%;
     text-align: center;
         border-width: 1px;
     border-style: solid;
     border-color: black;
+    opacity: 0.80;
 }
 
 #des_content p{
+    color: white;
 }
 
 #participant{
@@ -72,12 +76,14 @@
 }
 
 #part_cont{
-    background-color: orange;
+    background-color: green;
     width: 100%;
     text-align: center;
     border-width: 1px;
     border-style: solid;
     border-color: black;
+    opacity: 0.80;
+    color:white;
 }
 
 #logged_user{
@@ -107,3 +113,94 @@
     text-align: start;
     margin-left: 20%;
 }
+.formular{
+    height:100%;
+    width: 100%;
+  
+    background-image: url("https://www.socialmediaandprint.co.uk/wp-content/uploads/2015/08/set_the_lion_on_fire.jpg"); 
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+}
+
+.form-box{
+    width: 380px;
+    height: 480px;
+    position: relative;
+    margin: 6% auto;
+    background-color: black;
+    padding: 5px;
+    opacity: 0.80;
+    overflow: hidden;
+}
+
+.button-box{
+    width: 220px;
+    margin: 35px auto;
+    box-shadow: 0 0 20px 9px  #ff6506;
+    border-radius: 30px;
+}
+
+.toggle-btn{
+    padding: 10px 30px;
+    cursor: pointer;
+    background: transparent;
+    border: 0;
+    outline: none;
+    position: relative;
+    color:white;
+    
+}
+
+
+.input-group{
+top: 180px;
+    position: absolute;
+    width: 280px;
+    transition: .5s;
+    
+    
+}
+
+.input-field{
+    width: 100%;
+    padding: 10px 0;
+    margin: 5px 0;
+    border-left: 0;
+    border-top: 0;
+    border-right: 0;
+    border-bottom: 1px solid #999;
+    outline: none;
+    background: transparent;
+    color: white;
+    
+    
+}
+
+.submit-btn{
+    width: 85%;
+    padding: 10px 30px;
+    cursor: pointer;
+    display: block;
+    margin: auto;
+    background: linear-gradient(to right, #FF4500, 	#FF8C00);
+    border: 0;
+    outline: none;
+    border-radius: 30px;
+    
+}
+.check-box{
+    margin: 30px 10px 30px 0;
+    
+}
+
+
+#login{
+    left: 50px;
+    
+}
+
+#register{
+    left: 450px;
+}
+

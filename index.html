@@ -4,25 +4,63 @@
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <form action="login.php" method="post">
-            Username: <input type="text" name="username"><br>
-            Parola: <input type="password" name="password"><br>
-            <input type="submit" value="Login">
+        <div class="formular">
+            <div class="form-box">
+                <div class="button-box">
+                    <div id="btn"></div>
+                    <button type="button" class="toggle-btn" onclick="login()">Log in/Cerere</button>
+                    <button type="button" class="toggle-btn" onclick="register()">Inregistrare</button>
+                 
+                
+                </div>
+        
+        <form id="login" class="input-group">
+             <input type="text" class="input-field" placeholder="username" required><br>
+            <input type="password" class="input-field" placeholder="password" required><br>
+            
+            <button type="submit" class="submit-btn">Log in</button>
+            <input type="email" class="input-field" placeholder="email" required><br>
+            
+         
+            <button type="submit" class="submit-btn">Cerere</button>
+          
         </form>
-                <h3>Inregistrare</h3>
-        <form action="register.php" method="post">
-            Email: <input type="text" name="email"><br>
-            Parola: <input type="password" name="password"><br>
-            Repetare parola: <input type="password" name="rpassword"><br>
-            Gender: Male<input type="radio" name="gender" value="male">
-                    Female<input type="radio" name="gender" value="female">
-                    Nu exista altceva!<input type="radio" name="gender" value="gay"><br>
-            <input type="submit" value="Register">
+            
+        <form id="register" class="input-group">
+             <input type="text" class="input-field" placeholder="username" required><br>
+            <input type="email" class="input-field" placeholder="email" required><br>
+            <input type="password" class="input-field" placeholder="password" required><br>
+         
+            <button type="submit" class="submit-btn">Inregistrare</button>
+          
+       
+          
+         
         </form>
-                <h3>Cerere inregistrare</h3>
-        <form action="request.php" method="post">
-            Email: <input type="text" name="email"><br>
-            <input type="submit" value="Request">
-        </form>
+              
+            </div>
+        </div>
+              <script>
+                  var x= document.getElementById("login");
+                  var y= document.getElementById("register");
+                  var w= document.getElementById("cerere");
+                  var z= document.getElementById("btn");
+                  function register(){
+                      x.style.left = "-450px";
+                      y.style.left= "40px";
+                      z.style.left ="110px";
+                    
+                  }
+                   function login(){
+                      x.style.left = "40px";
+                      y.style.left= "450px";
+                      z.style.left ="0px";
+
+                  }
+              
+        </script>
+            
+        
+        
             </body>
 </html>
